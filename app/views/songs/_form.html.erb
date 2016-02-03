@@ -1,4 +1,6 @@
 <%= form_for @song  do |f| %>
+  <%= label_tag 'Artist:' %>
+  <%= artist_select(@nested, @song) %> <br>
   <%= f.label :title %>
   <%= f.text_field :title %><br>
   <%= f.label :artist_name %>
